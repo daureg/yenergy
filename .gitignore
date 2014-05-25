@@ -1,3 +1,19 @@
+.ipynb_checkpoints/
+Vtt_buildings_meter_data
+apartment1_NIALM_device_data.txt
+api_keys.py
+data/fake.json
+export.geojson
+jquery-2.1.1.js
+load_vtt.ipynb
+otaniemi_full.geojson
+persistent.py
+sample8.csv
+simple.json
+*.my
+
+gmap.js
+google_map_url.js
 
 # Created by http://www.gitignore.io
 

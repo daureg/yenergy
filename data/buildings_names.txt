@@ -1,0 +1,124 @@
+Betoniemiehenkuja 5 (KV)
+TKK Betonimiehenkuja 5 ;Espoo;
+TKK Betonimiehenkuja 5;Espoo;
+
+Betonimiehenkuja 1
+TKK/VTT Betonimiehenkuja 1;02150;Espoo;
+
+Betonimiehenkuja 3
+Betonimiehenkuja 3 ;Espoo;
+TKK Betonimiehenkuja 3;300049;Espoo;
+
+Kirjasto Otaniementie 9
+TKK Kirjasto ;Otaniementie 9;Espoo;
+TKK Kirjasto;Otaniementie 9;;Espoo;
+
+Laivatekniikka
+
+Lämpömiehenkuja 2
+Lämpömiehenkuja 2 ;Espoo;
+TKK Lämpömiehenkuja 2 ;02150;Espoo;
+
+TKK Lämpömiehenkuja 3 ;02150;Espoo;
+Lämpömiehenkuja 3 (kattilalaitos KV)
+Lämpömiehenkuja 3 (osa 1 KV)
+Lämpömiehenkuja 3 (osa 1) ;Espoo
+Lämpömiehenkuja 3 (osa 2);;Espoo
+
+Rakennus- ja ympäristötekniikka N12 S
+
+TKK  Kemian tekniikka;Kemistintie 1;;Esp
+TKK Kemian tekn.;Kemistintie 1;;Espoo;
+TKK Kemian tekniikka ;Kemistintie 1
+TKK Kemian tekniikka(KV) /Kemistintie 1
+
+TKK  Meritekniikanlaboratorio Tietotie 1
+
+TKK Energia- ja virt.tekn.;Sähkömiehent
+TKK Energia-/virt.tekn.;Sähkömiehent
+TKK Energia-/virt.tekn.;Sähkömiehent.4;;
+
+TKK Energia/virt.tekn.lab.Sähkömiehent.9
+
+TKK Keskusväestön suoja 1;Otakaari 26;Es
+
+TKK Kuljetus/konerak.tekn.;Puumiehenkj 5
+
+Maarintalo
+TKK Maarintalo ;Sähkömiehentie 3;
+TKK Maarintalo;Sähkömiehentie 3;;Espoo;
+
+Materiaalitekniikka
+TKK Materiaali/kalliot.os.;Vuorimiehent.
+TKK Materiaali/kalliotekn.;Vuorimiehent
+TKK Materiaali/kalliotekn.;Vuorimiehent.
+
+TKK Meritekniikanlaboratorio Tietotie 1
+TKK Meritekniikanlaboratorio;Tietotie 1;
+TKK Meritekniikka/vesilab. /Tietotie 1
+TKK Meritekniikka;Tietotie 1;;Es
+
+Metallimiehenkuja  10 (KV)
+Metallimiehenkuja 10 ;Espoo;
+TKK Metallimiehenkuja  10;02150;Espoo;
+
+TKK Nano ;Puumiehenkuja 2;;Espoo;
+TKK Nano-talo (KV);Puumiehenkuja 2
+TKK Nano-talo;Puumiehenkuja 2;;Espoo;
+
+TKK Puunjalostusos.;Vuorimiehentie 1;Esp
+TKK Puunjalostustekn. 1 Vuorimiehent.1
+TKK Puunjalostustekn.1;Vuorimiehentie 1;
+
+TKK Puu 2 Tekniikantie 3;;Espoo;
+TKK Puunjalostustekn. 2;Tekniikantie 3;E
+TKK Puunjalostustekniikka 2 Tekniikant.3
+
+TKK Päärakennus ;Otakaari 1;;Espoo;
+TKK Päärakennus Hallinto Otakaari 1;
+TKK Päärakennus Otakaari 1
+TKK Päärakennus Uusi Puoli Otakaari 1
+TKK Päärakennus;Otakaari 1;;Espoo;
+
+TKK Rak./yhdyskunta tekn.Rakentajanauki
+TKK Rakennus- ja yhdyskunta tekn. (KV)
+TKK Rakennus-/yhdyskunta;Rakentajanaukio
+TKK Rakennus/yhdysk.;Rakentajanaukio 4;;
+
+Saha, Konemiehentie 1 N12
+TKK Sahalaboratorio;Konemiehentie 1;Espo
+
+Tietotekniikan talo ;Konemiehentie 2;;Es
+Tietotekniikan talo Konemiehentie
+TKK Tietotekniikan talo ;Konemiehentie 2
+
+Konetekniikka 1
+
+Konetekniikka 3
+
+TKK Konetekniikan osasto ;Otakaari 4
+TKK Konetekniikan osasto;Otakaari 4;;Esp
+Tila- ja turvallisuusasiat Konemiehent.4
+
+TKK Tuotanto-/mater.tekn./Puumiehenkj.3
+TKK Tuotanto-/materiaali;Puumiehenkuja 3
+TKK Tuotanto-/materiaalitek;Puumiehenk.3
+
+TKK Tuotantotal. os.   /Otaniementie 17
+TKK, Tuotantotalouden os. ;Otaniement.17
+TKK, Tuotantotalouden os.;Otaniementie 1
+
+TKK/Radiotutk.as.;Metsähovintie 113;;Kir
+
+TKK/VTT Sähkötekn.;Otakaari 5;;Espoo;
+TKK/VTT Sähkötekniikan osasto Otakaari 5
+TKK/VTT Sähkötekniikan osasto;Otakaari 5
+TKK/VTT Sähkötekniikka;Otakaari 5;
+
+TKK/VTT Sähkötekniikan osasto Otakaari 7
+
+TKK/VTT Tekn. fysiikan os ;Rakentajanauk
+TKK/VTT Tekn.fysiikan os.;Rak.aukio 2/(O
+TKK/VTT Tekn.fysiikan os.Rakentajanauki
+
+TKK/VTT Teknisen fysiikan os. Otakaari 3
