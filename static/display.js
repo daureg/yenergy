@@ -1,9 +1,10 @@
-var fake = {
-  "r": [
-    [530.0, 530.0, 530.0, 530.0, 530.0, 530.0, 530.0, 530.0, 530.0, 523.33, 520.0, 520.0, 520.0, 526.67, 520.0, 520.0, 520.0, 520.0, 520.0, 520.0, 520.0, 520.0, 520.0, 520.0, 520.0, 520.0, 520.0, 520.0, 520.0, 515.0, 510.0, 510.0, 510.0, 510.0, 510.0, 510.0, 510.0, 510.0, 510.0, 505.0, 500.0, 500.0, 500.0, 500.0, 500.0],
-  [ 240.0, 250.0, 250.0, 250.0, 250.0, 240.0, 240.0, 240.0, 240.0, 240.0, 240.0, 240.0, 240.0, 240.0, 245.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 245.0, 240.0, 240.0, 240.0, 250.0, 246.67, 240.0, 240.0, 250.0, 250.0, 240.0, 240.0, 240.0, 240.0, 240.0, 235.0, 230.0, 230.0 ]
-  ]
-}
+var graph=null;
+// var fake = {
+//   "r": [
+//     [530.0, 530.0, 530.0, 530.0, 530.0, 530.0, 530.0, 530.0, 530.0, 523.33, 520.0, 520.0, 520.0, 526.67, 520.0, 520.0, 520.0, 520.0, 520.0, 520.0, 520.0, 520.0, 520.0, 520.0, 520.0, 520.0, 520.0, 520.0, 520.0, 515.0, 510.0, 510.0, 510.0, 510.0, 510.0, 510.0, 510.0, 510.0, 510.0, 505.0, 500.0, 500.0, 500.0, 500.0, 500.0],
+//   [ 240.0, 250.0, 250.0, 250.0, 250.0, 240.0, 240.0, 240.0, 240.0, 240.0, 240.0, 240.0, 240.0, 240.0, 245.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 250.0, 245.0, 240.0, 240.0, 240.0, 250.0, 246.67, 240.0, 240.0, 250.0, 250.0, 240.0, 240.0, 240.0, 240.0, 240.0, 235.0, 230.0, 230.0 ]
+//   ]
+// };
 var popup_content = '<h2>{{name}}</h2>';
 popup_content += '<p>Electricity: {{elec}} kWh<br>';
 popup_content += 'Heat: {{heat}} kWh</p>';
@@ -11,7 +12,7 @@ popup_content += 'Heat: {{heat}} kWh</p>';
 var info_content = '<h2>{{name}}</h2>';
 info_content += '<p>Electricity: {{elec}} kWh<br>';
 info_content += 'Heat: {{heat}} kWh<br>';
-info_content += 'Surface: {{surface}} m²</p>';
+info_content += 'Surface: {{surface}} m²</p><h3>Air quality</h3><div id="graph"></div>';
 var MINI = require('minified');
 var _=MINI._, $=MINI.$, $$=MINI.$$, EE=MINI.EE, HTML=MINI.HTML;
 function initialize() {
@@ -72,10 +73,12 @@ function initialize() {
         infoPane.fill(HTML(fmt, data));
         var now = Date.create();
         var before = Date.create().rewind({ minutes: 59 });
+        graph = create_graph('graph');
         $.request('get', '/air/'+date_to_str(before)+'/'+date_to_str(now))
         .then(function(txt) {
             var json = $.parseJSON(txt);
-            infoPane.add(json.r[0]);
+            plot(graph, json.r);
+            // infoPane.add(json.r[0]);
         })
         .error(function(status, statusText, responseText) {
             console.log(status, statusText, responseText);
@@ -115,13 +118,9 @@ $(function() {
     }, false);
 
 
-
 });
 
-
 function date_to_str(d) {
-    // var month = '0'+d.getMonth();
-    // return d.getFullYear()+month+d.getDay()+''+d.getHours()+''+d.getMinutes();
     return d.format('{yyyy}{MM}{dd}{hh}{mm}');
 }
 

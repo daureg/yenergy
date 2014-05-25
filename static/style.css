@@ -25,3 +25,10 @@ a{color:CornflowerBlue !important; text-decoration: none !important;}
 line-height: 1.2;
 padding: .5em;
 }
+svg {font-size: 12px;}
+path {fill: none;}
+.axis { shape-rendering: crispEdges; }
+.x.axis line { stroke: lightgrey; }
+.x.axis .minor { display: none;stroke-opacity: .5; }
+.x.axis path { display: none; }
+.y.axis line, .y.axis path { fill: none; stroke: #000; }

@@ -6,6 +6,7 @@
         <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
         <script type="text/javascript" src="{{ url_for('static', filename='minified-src.js') }}"></script>
         <script type="text/javascript" src="{{ url_for('static', filename='gmap.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='d3.v3.min.js') }}"></script>
         <script type="text/javascript" src="{{ url_for('static', filename='data/buildings_info.js') }}"></script>
         <script type="text/javascript" src="{{ url_for('static', filename='sugar.min.js') }}"></script>
         <link  rel='stylesheet' type='text/css' href="{{ url_for('static', filename='style.css') }}">
@@ -15,6 +16,7 @@
       <div id="map-canvas"></div>
       <div id="info"></div>
       <div id="popup"></div>
+        <script type="text/javascript" src="{{ url_for('static', filename='plot.js') }}"></script>
         <script type="text/javascript" src="{{ url_for('static', filename='display.js') }}"></script>
   </body>
 </html>
