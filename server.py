@@ -32,7 +32,7 @@ def air(dfrom, dto):
 
 @APP.route('/')
 def index():
-    return f.render_template('index.html')
+    return f.render_template('map.html')
 
 if __name__ == '__main__':
     APP.run(debug=True)
