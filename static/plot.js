@@ -3,8 +3,8 @@
  */
 function create_graph(id) {
     // define dimensions of graph
-    var m = [40, 20, 40, 40]; // margins
-    var w = 1440-1152 - m[1] - m[3]; // width
+    var m = [25, 10, 25, 50]; // margins
+    var w = parseInt(window.innerWidth*0.25) - m[1] - m[3]; // width
     var h = 300 - m[0] - m[2]; // height
     // Add an SVG element with the desired dimensions and margin.
     var graph = d3.select('#'+id).append("svg:svg")
@@ -38,6 +38,7 @@ function plot(graph, data) {
         .x(function(d,i) { return scaleX(i); })
         .y(function(d) { return scaleY(d); })
         .interpolate('cardinal').tension(0.9);
+    var var_names = [{name: 'CO2', color: colors[0]}, {name: 'VOC', color: colors[1]}];
 
     // create xAxis
     var xAxis = d3.svg.axis().scale(scaleX).tickSize(-h);
@@ -86,28 +87,28 @@ function plot(graph, data) {
         //            tooltip.style("opacity", 0);   
         //     });
     }
-    // var legend = graph.append('g')
-    //     .attr('class', 'legend')
-    //     .attr("height", places.length*20)
-    //     .attr("width", 200)
-    //     .attr('transform', 'translate(-150,0)');
-    // legend.selectAll('rect')
-    //     .data(places)
-    //     .enter()
-    //     .append('rect')
-    //     .attr('x', w - 20)
-    //     .attr('y', function(d, i){return i *  20;})
-    //     .attr('width', 10)
-    //     .attr('height', 10)
-    //     .style('fill', function(d) { return d.color; });
-    //
-    // legend.selectAll('text')
-    //     .data(places)
-    //     .enter()
-    //     .append('text')
-    //     .attr('x', w - 6)
-    //     .attr('y', function(d, i){ return (i *  20) + 10;})
-    //     .text(function(d){ return d.name; });
+    var legend = graph.append('g')
+        .attr('class', 'legend')
+        .attr("height", var_names.length*20)
+        .attr("width", 150)
+        .attr('transform', 'translate(-50,110)');
+    legend.selectAll('rect')
+        .data(var_names)
+        .enter()
+        .append('rect')
+        .attr('x', w - 20)
+        .attr('y', function(d, i){return i *  20;})
+        .attr('width', 10)
+        .attr('height', 10)
+        .style('fill', function(d) { return d.color; });
+
+    legend.selectAll('text')
+        .data(var_names)
+        .enter()
+        .append('text')
+        .attr('x', w - 6)
+        .attr('y', function(d, i){ return (i *  20) + 10;})
+        .text(function(d){ return d.name; });
 
 }
 

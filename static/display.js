@@ -107,22 +107,21 @@ var mapSlide = null,
     anim_ms = 200;
 
 $(function() {
-    mapSlide = $('#map-canvas').toggle({$left: '0'}, {$left: '-20%'}, anim_ms);
+    mapSlide = $('#map-canvas').toggle({$left: '0'}, {$left: '-25%'}, anim_ms);
     infoSlide = $('#info').toggle({$left: '100%', $display: 'none'},
-        {$left: '80%', $display: 'block'}, anim_ms);
+        {$left: '75%', $display: 'block'}, anim_ms);
 
     document.addEventListener('keydown', function(event) {
-        if (event.keyCode === 27) {
-            mapSlide();
-            infoSlide();
-            infoOpen = false;
-        }
+        if (event.keyCode === 27) { closePanel(); }
     }, false);
 
 
 });
-
+function closePanel() {
+	mapSlide();
+	infoSlide();
+	infoOpen = false;
+}
 function date_to_str(d) {
     return d.format('{yyyy}{MM}{dd}{hh}{mm}');
 }
-

@@ -1,29 +1,34 @@
+* {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
 html { height: 100%; }
 body {
     height: 100%;
     margin: 0;
     padding: 0;
     background: #F9FCF9;
-    font-family: 'Linux Libertine O', 'Linux Libertine', serif;
+    font-family: 'Linux Libertine O', 'Linux Libertine', 'Open Sans', sans-serif;
     color: #333;
-    font-size: 14pt;
+    font-size: 12pt;
     line-height: 1.5;
 }
 a{color:CornflowerBlue !important; text-decoration: none !important;}
 #map-canvas { position: absolute; top:0; left: 0; height: 100%; width: 100%; }
-#info {position: absolute; top:0; left: 80%; width: 20%; padding: .5em;}
+#info {position: absolute; top:0; left: 75%; width: 25%;}
+#info p, #info h2, #info h3 {padding: 0.5em;}
 #popup h2 {
     margin: .1em;
-    font-size: 14pt;
+    font-size: 12pt;
 }
 #popup {
-    position: absolute;
-    display: none;
-    background: rgba(166, 135, 145, 0.6);
-    z-index: 50;
-    border-radius: 10px;
-line-height: 1.2;
-padding: .5em;
+	position: absolute;
+	display: none;
+	background: rgba(166, 135, 145, 0.6);
+	z-index: 50;
+	border-radius: 10px;
+	line-height: 1.2;
+	padding: .5em;
 }
 svg {font-size: 12px;}
 path {fill: none;}
