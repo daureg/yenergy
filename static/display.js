@@ -22,7 +22,7 @@ function initialize() {
     };
     var map = new google.maps.Map(document.getElementById("map-canvas"),
             mapOptions);
-    map.data.loadGeoJson('static/data/relevants.json');
+    map.data.loadGeoJson('data/relevants.json');
     map.data.setStyle(function(feature) {
         var id = feature.getProperty('@id');
         var surface = INFO[id].surface;
