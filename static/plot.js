@@ -4,8 +4,8 @@
 function create_graph(id) {
     // define dimensions of graph
     var m = [25, 10, 25, 50]; // margins
-    var w = parseInt(window.innerWidth*0.25) - m[1] - m[3]; // width
-    var h = 300 - m[0] - m[2]; // height
+    var w = parseInt(window.innerWidth*0.32) - m[1] - m[3]; // width
+    var h = 260 - m[0] - m[2]; // height
     // Add an SVG element with the desired dimensions and margin.
     var graph = d3.select('#'+id).append("svg:svg")
         .attr("width", w + m[1] + m[3])

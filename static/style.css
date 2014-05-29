@@ -7,16 +7,17 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background: #F9FCF9;
-    font-family: 'Linux Libertine O', 'Linux Libertine', 'Open Sans', sans-serif;
+    background: rgb(245, 242, 240);
+    font-family: 'Open Sans', sans-serif;
     color: #333;
-    font-size: 12pt;
+    font-size: 14pt;
     line-height: 1.5;
 }
 a{color:CornflowerBlue !important; text-decoration: none !important;}
 #map-canvas { position: absolute; top:0; left: 0; height: 100%; width: 100%; }
-#info {position: absolute; top:0; left: 75%; width: 25%;}
-#info p, #info h2, #info h3 {padding: 0.5em;}
+#info {position: absolute; top:0; left: 66%; width: 34%;}
+#info p, #info h1, #info h2, #info h3 {padding-left: 0.5em; vertical-align: middle;}
+#info h3 {margin: .5em auto;}
 #popup h2 {
     margin: .1em;
     font-size: 12pt;
@@ -30,10 +31,33 @@ a{color:CornflowerBlue !important; text-decoration: none !important;}
 	line-height: 1.2;
 	padding: .5em;
 }
-svg {font-size: 12px;}
+svg {font-size: 12px; margin: 0 auto; width: 98%; display: block}
 path {fill: none;}
 .axis { shape-rendering: crispEdges; }
 .x.axis line { stroke: lightgrey; }
 .x.axis .minor { display: none;stroke-opacity: .5; }
 .x.axis path { display: none; }
 .y.axis line, .y.axis path { fill: none; stroke: #000; }
+#info table {
+	text-align: center;
+	width: 96%;
+	margin: 0 auto;
+}
+/* td, tr {text-align: left;} */
+#info header {
+	color: #fafefa;
+	/* text-align: center; */
+	vertical-align: middle;
+	padding: 0.4em 0;
+}
+#info header h2 {text-align: center;}
+img.icon {
+	width: 32px;
+	height: 32px;
+	vertical-align: middle;
+}
+#info .close {
+	position: absolute;
+	top: 8px;
+	left: 8px;
+}
